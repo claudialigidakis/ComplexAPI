@@ -11,6 +11,7 @@ if (process.env.NODE_ENV === 'development') app.use(morgan('dev'))
 
 //routing to routes
 app.use('/books', require('./routes/books'))
+app.use('/books', require('./routes/authors'))
 
 
 //error codes
